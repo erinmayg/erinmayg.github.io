@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --fontHead: 'Lexend Exa', sans-serif;
+  --fontText: 'Fira Code', 'Roboto Mono', monospace;
+  --bgColor: #1b191f;
+  --lightgrey: #c4c4c4;
+  --lightgrey-2: rgba(196, 196, 196, 0.2);
+  --grey: #a8a8a8;
+  --darkaccent: #514970;
+  --accent1: #b384ff;
+  --accent2: #873eff;
+
+  --tab-width: 80px;
+  --tab-height: 20px;
+
+  --transition: all 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--darkaccent) var(--bgColor);
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--darkaccent);
+  border: 2px solid var(--bgColor);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--bgColor);
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--fontHead);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 4ch;
+}
+
+/* Lists and buttons */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--lightgrey);
+  transition: var(--transition);
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+}
+
+/* Sections and Divs */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 60px 120px;
+}
+
+@media (max-width: 768px) {
+  section {
+    display: block;
+    padding: 2rem;
+    padding-top: 120px;
+  }
 }
