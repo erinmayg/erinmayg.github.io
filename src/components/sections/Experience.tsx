@@ -177,7 +177,7 @@ const JobPanel = () => {
         {jobs.map((job, i) => (
           <StyledTabListButton
             key={i}
-            isActive={activeTabId == i}
+            isActive={activeTabId === i}
             onClick={() => setActiveTabId(i)}
           >
             {job.company}

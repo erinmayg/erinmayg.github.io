@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { INSTAGRAM, NUS } from '../../constants'
+import { NUS } from '../../constants'
 import IconSparkle from '../icons/sparkle'
 
 const AboutSection = styled.section`
