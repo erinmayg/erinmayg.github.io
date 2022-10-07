@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { RESUME } from '../constants';
-import IconDoc from './icons/doc';
+import React from 'react'
+import styled from 'styled-components'
+import { RESUME } from '../constants'
+import IconDoc from './icons/doc'
 
 const StyledNav = styled.nav`
   width: 100%;
@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
     height: 24px;
     fill: inherit;
   }
-`;
+`
 
 const Button = styled.a`
   position: relative;
@@ -75,11 +75,11 @@ const Button = styled.a`
   &:hover::after {
     transform: scale(1, 1);
   }
-`;
+`
 
 const Logo = styled.a`
   fontfamily: var(--fontHead);
-`;
+`
 
 function Nav() {
   return (
@@ -94,7 +94,7 @@ function Nav() {
         </a>
       </div>
     </StyledNav>
-  );
+  )
 }
 
-export default Nav;
+export default Nav

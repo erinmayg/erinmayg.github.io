@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { EMAIL, GITHUB, INSTAGRAM, LINKEDIN } from '../constants';
-import IconGitHub from './icons/github';
-import IconInsta from './icons/insta';
-import IconLinkedIn from './icons/linkedin';
+import React from 'react'
+import styled from 'styled-components'
+import { EMAIL, GITHUB, INSTAGRAM, LINKEDIN } from '../constants'
+import IconGitHub from './icons/github'
+import IconInsta from './icons/insta'
+import IconLinkedIn from './icons/linkedin'
 
-const StyledSidebar = styled.div``;
+const StyledSidebar = styled.div``
 
 const Button = styled.a`
   svg {
@@ -18,7 +18,7 @@ const Button = styled.a`
     color: var(--accent1);
     transition: var(--transition);
   }
-`;
+`
 
 const StyledSocMed = styled.div`
   display: flex;
@@ -62,7 +62,7 @@ const StyledSocMed = styled.div`
       display: none;
     }
   }
-`;
+`
 
 const StyledEmail = styled.div`
   display: flex;
@@ -98,7 +98,7 @@ const StyledEmail = styled.div`
   @media (max-width: 768px) and (min-height: 700px) {
     display: none;
   }
-`;
+`
 
 function Sidebar() {
   return (
@@ -120,7 +120,7 @@ function Sidebar() {
         </a>
       </StyledEmail>
     </StyledSidebar>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

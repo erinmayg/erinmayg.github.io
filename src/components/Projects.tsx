@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { PROJECTS } from '../constants';
-import IconGitHub from './icons/github';
-import IconLink from './icons/link';
+import React from 'react'
+import styled from 'styled-components'
+import { PROJECTS } from '../constants'
+import IconGitHub from './icons/github'
+import IconLink from './icons/link'
 
 const StyledProjectCards = styled.div`
   display: grid;
@@ -14,7 +14,7 @@ const StyledProjectCards = styled.div`
     margin: 0;
     overflow-x: scroll;
   }
-`;
+`
 
 const StyledTechStack = styled.ul`
   display: flex;
@@ -31,7 +31,7 @@ const StyledTechStack = styled.ul`
       margin-right: 0;
     }
   }
-`;
+`
 
 const StyledLinks = styled.div`
   display: flex;
@@ -52,7 +52,7 @@ const StyledLinks = styled.div`
       color: var(--accent1);
     }
   }
-`;
+`
 
 const StyledProjectCard = styled.div`
   margin: 1rem;
@@ -67,17 +67,17 @@ const StyledProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`;
+`
 
 const ProjectCard = (props: {
   project: {
-    title: string;
-    desc: string;
-    techStack: string[];
-    links: { site?: string; github: string };
-  };
+    title: string
+    desc: string
+    techStack: string[]
+    links: { site?: string; github: string }
+  }
 }) => {
-  const { project: work } = props;
+  const { project: work } = props
   return (
     <StyledProjectCard>
       <div style={{ marginBottom: '2rem' }}>
@@ -105,8 +105,8 @@ const ProjectCard = (props: {
         </StyledLinks>
       </div>
     </StyledProjectCard>
-  );
-};
+  )
+}
 
 function Project() {
   return (
@@ -115,7 +115,7 @@ function Project() {
         <ProjectCard project={project} key={i} />
       ))}
     </StyledProjectCards>
-  );
+  )
 }
 
-export default Project;
+export default Project

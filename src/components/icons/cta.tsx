@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const StyledIcon = styled.svg`
   width: 200px;
@@ -15,7 +15,7 @@ const StyledIcon = styled.svg`
     letter-spacing: 20px;
     fill: white;
   }
-`;
+`
 
 const IconCTA = (props: { reverse: boolean }) => (
   <StyledIcon className='cta' reverse={props.reverse}>
@@ -46,6 +46,6 @@ const IconCTA = (props: { reverse: boolean }) => (
       </text>
     </svg>
   </StyledIcon>
-);
+)
 
-export default IconCTA;
+export default IconCTA

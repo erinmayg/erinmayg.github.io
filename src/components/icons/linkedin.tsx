@@ -1,4 +1,4 @@
-import Icon from './icon';
+import Icon from './icon'
 
 const IconLinkedIn = () => (
   <Icon>
@@ -18,6 +18,6 @@ const IconLinkedIn = () => (
       <circle cx='4' cy='4' r='2'></circle>
     </svg>
   </Icon>
-);
+)
 
-export default IconLinkedIn;
+export default IconLinkedIn

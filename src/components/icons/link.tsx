@@ -1,5 +1,5 @@
-import React from 'react';
-import Icon from './icon';
+import React from 'react'
+import Icon from './icon'
 
 const IconLink = () => (
   <Icon>
@@ -19,6 +19,6 @@ const IconLink = () => (
       <line x1='10' y1='14' x2='21' y2='3'></line>
     </svg>
   </Icon>
-);
+)
 
-export default IconLink;
+export default IconLink

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { JOBS } from '../../constants';
-import IconSparkle from '../icons/sparkle';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { JOBS } from '../../constants'
+import IconSparkle from '../icons/sparkle'
 
 const StyledTabPanel = styled.div`
   display: inline-block;
@@ -74,18 +74,18 @@ const StyledTabPanel = styled.div`
     color: var(--light-grey);
     text-align: left;
   }
-`;
+`
 
 interface JobInterface {
-  jobTitle: string;
-  date: string;
-  company: string;
-  companyLink: string;
-  desc: string[];
+  jobTitle: string
+  date: string
+  company: string
+  companyLink: string
+  desc: string[]
 }
 
 const TabPanel = (props: { job: JobInterface }) => {
-  const { jobTitle, date, company, companyLink, desc } = props.job;
+  const { jobTitle, date, company, companyLink, desc } = props.job
   return (
     <StyledTabPanel>
       <h2>
@@ -112,8 +112,8 @@ const TabPanel = (props: { job: JobInterface }) => {
         ))}
       </div>
     </StyledTabPanel>
-  );
-};
+  )
+}
 
 const StyledJobPanel = styled.div`
   display: flex;
@@ -125,7 +125,7 @@ const StyledJobPanel = styled.div`
     width: 100vw;
     overscroll-x: scroll;
   }
-`;
+`
 
 const StyledTabList = styled.div`
   display: flex;
@@ -138,7 +138,7 @@ const StyledTabList = styled.div`
     align-items: space-evenly;
     width: 100vw;
   }
-`;
+`
 
 const StyledTabListButton = styled.button`
   width: 200px;
@@ -165,11 +165,11 @@ const StyledTabListButton = styled.button`
       ${(props: { isActive: boolean }) =>
         props.isActive ? 'var(--lightgrey)' : 'var(--darkaccent)'};
   }
-`;
+`
 
 const JobPanel = () => {
-  const [activeTabId, setActiveTabId] = useState(0);
-  const jobs = JOBS;
+  const [activeTabId, setActiveTabId] = useState(0)
+  const jobs = JOBS
 
   return (
     <StyledJobPanel>
@@ -186,8 +186,8 @@ const JobPanel = () => {
       </StyledTabList>
       <TabPanel job={jobs[activeTabId]} />
     </StyledJobPanel>
-  );
-};
+  )
+}
 
 const ExperienceSection = styled.section`
   flex-direction: column;
@@ -208,7 +208,7 @@ const ExperienceSection = styled.section`
       padding: 0 2rem;
     }
   }
-`;
+`
 
 function Experience() {
   return (
@@ -218,7 +218,7 @@ function Experience() {
         <JobPanel />
       </div>
     </ExperienceSection>
-  );
+  )
 }
 
-export default Experience;
+export default Experience

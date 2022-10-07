@@ -1,11 +1,11 @@
-export const LINKEDIN = 'https://linkedin.com/in/erinmayg';
-export const GITHUB = 'https://github.com/erinmayg';
+export const LINKEDIN = 'https://linkedin.com/in/erinmayg'
+export const GITHUB = 'https://github.com/erinmayg'
 export const RESUME =
-  'https://drive.google.com/file/d/1psJlKMhGC1Xq9rKdLCG3vRVikCZ4qhFR/view?usp=sharing';
-export const INSTAGRAM = 'https://instagram.com/slyth.erinnn';
-export const EMAIL = 'erinmayg@gmail.com';
+  'https://drive.google.com/file/d/1psJlKMhGC1Xq9rKdLCG3vRVikCZ4qhFR/view?usp=sharing'
+export const INSTAGRAM = 'https://instagram.com/slyth.erinnn'
+export const EMAIL = 'erinmayg@gmail.com'
 
-export const NUS = 'https://www.nus.edu.sg/';
+export const NUS = 'https://www.nus.edu.sg/'
 
 export const JOBS = [
   {
@@ -38,7 +38,7 @@ export const JOBS = [
       'Constructed a dashboard view for customer manager data using DAX and Power BI.',
     ],
   },
-];
+]
 
 export const FEATURED = [
   {
@@ -61,7 +61,7 @@ export const FEATURED = [
       github: 'https://github.com/erinmayg/tp',
     },
   },
-];
+]
 
 export const PROJECTS = [
   {
@@ -91,4 +91,4 @@ export const PROJECTS = [
       github: 'https://github.com/erinmayg/netflix-clone',
     },
   },
-];
+]

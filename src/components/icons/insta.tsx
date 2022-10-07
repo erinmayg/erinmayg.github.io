@@ -1,4 +1,4 @@
-import Icon from './icon';
+import Icon from './icon'
 
 const IconInsta = () => (
   <Icon>
@@ -18,6 +18,6 @@ const IconInsta = () => (
       <line x1='17.5' y1='6.5' x2='17.51' y2='6.5'></line>
     </svg>
   </Icon>
-);
+)
 
-export default IconInsta;
+export default IconInsta

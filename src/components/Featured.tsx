@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FEATURED } from '../constants';
-import IconCTA from './icons/cta';
-import IconGitHub from './icons/github';
-import IconLink from './icons/link';
+import React from 'react'
+import styled from 'styled-components'
+import { FEATURED } from '../constants'
+import IconCTA from './icons/cta'
+import IconGitHub from './icons/github'
+import IconLink from './icons/link'
 
 const StyledFeaturedWork = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const StyledFeaturedWork = styled.div`
     margin: 2rem;
     text-align: left;
   }
-`;
+`
 
 const StyledImage = styled.a`
   position: relative;
@@ -111,7 +111,7 @@ const StyledImage = styled.a`
       }
     }
   }
-`;
+`
 
 const StyledTechStack = styled.ul`
   display: flex;
@@ -132,7 +132,7 @@ const StyledTechStack = styled.ul`
   @media (max-width: 768px) {
     justify-content: flex-start;
   }
-`;
+`
 
 const StyledLinks = styled.div`
   display: flex;
@@ -157,19 +157,19 @@ const StyledLinks = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
   }
-`;
+`
 
 const FeaturedWork = (props: {
   featured: {
-    title: string;
-    desc: string;
-    image: string;
-    techStack: string[];
-    links: { site?: string; github: string };
-  };
-  reverse: boolean;
+    title: string
+    desc: string
+    image: string
+    techStack: string[]
+    links: { site?: string; github: string }
+  }
+  reverse: boolean
 }) => {
-  const { featured, reverse } = props;
+  const { featured, reverse } = props
 
   return (
     <StyledFeaturedWork reverse={reverse}>
@@ -213,8 +213,8 @@ const FeaturedWork = (props: {
         </StyledLinks>
       </div>
     </StyledFeaturedWork>
-  );
-};
+  )
+}
 
 const Featured = () => (
   <div>
@@ -223,6 +223,6 @@ const Featured = () => (
       <FeaturedWork featured={work} reverse={i % 2 === 0} key={i} />
     ))}
   </div>
-);
+)
 
-export default Featured;
+export default Featured

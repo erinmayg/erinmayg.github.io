@@ -1,4 +1,4 @@
-import Icon from './icon';
+import Icon from './icon'
 
 const IconSparkle = () => (
   <Icon>
@@ -17,6 +17,6 @@ const IconSparkle = () => (
       />
     </svg>
   </Icon>
-);
+)
 
-export default IconSparkle;
+export default IconSparkle

@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import Nav from './components/Nav';
-import Hero from './components/sections/Hero';
-import About from './components/sections/About';
-import Experience from './components/sections/Experience';
-import Sidebar from './components/Sidebar';
-import './App.css';
-import Works from './components/sections/Works';
+import React from 'react'
+import styled from 'styled-components'
+import Nav from './components/Nav'
+import Hero from './components/sections/Hero'
+import About from './components/sections/About'
+import Experience from './components/sections/Experience'
+import Sidebar from './components/Sidebar'
+import './App.css'
+import Works from './components/sections/Works'
 
 const StyledFooter = styled.footer`
   display: inline-block;
@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
       color: var(--accent1);
     }
   }
-`;
+`
 
 function App() {
   return (
@@ -57,7 +57,7 @@ function App() {
         </a>
       </StyledFooter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

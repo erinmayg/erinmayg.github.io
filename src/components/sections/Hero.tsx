@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { GITHUB, LINKEDIN, RESUME } from '../../constants';
-import IconArrow from '../icons/arrow';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { GITHUB, LINKEDIN, RESUME } from '../../constants'
+import IconArrow from '../icons/arrow'
 
 const HeroSection = styled.section`
   flex-direction: column;
@@ -20,7 +20,7 @@ const HeroSection = styled.section`
   p {
     max-width: 800px;
   }
-`;
+`
 
 const SocMed = styled.div`
   position: relative;
@@ -44,7 +44,7 @@ const SocMed = styled.div`
     fill: currentColor;
     transition: var(--transition);
   }
-`;
+`
 
 const Buttons = styled.div`
   position: absolute;
@@ -52,7 +52,7 @@ const Buttons = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-`;
+`
 
 const Button = styled.a`
   font-family: var(--fontHead);
@@ -62,11 +62,11 @@ const Button = styled.a`
     color: var(--accent1);
     transition: var(--transition);
   }
-`;
+`
 
 function Hero() {
-  const [show, setShow] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [show, setShow] = useState(false)
+  const [toggle, setToggle] = useState(false)
 
   return (
     <HeroSection>
@@ -101,7 +101,7 @@ function Hero() {
         </SocMed>
       </div>
     </HeroSection>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

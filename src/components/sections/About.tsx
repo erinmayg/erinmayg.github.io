@@ -1,18 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import { INSTAGRAM, NUS } from '../../constants';
-import IconSparkle from '../icons/sparkle';
+import React from 'react'
+import styled from 'styled-components'
+import { INSTAGRAM, NUS } from '../../constants'
+import IconSparkle from '../icons/sparkle'
 
 const AboutSection = styled.section`
   flex-direction: row;
-`;
+`
 
 const AboutMe = styled.div`
   max-width: 600px;
   h1::before {
     content: '01. ';
   }
-`;
+`
 
 const StyledContent = styled.div`
   margin: 1rem;
@@ -54,7 +54,7 @@ const StyledContent = styled.div`
       transform: scale(1, 1);
     }
   }
-`;
+`
 
 const StyledSkills = styled.div`
   ul {
@@ -79,7 +79,7 @@ const StyledSkills = styled.div`
     font-size: 0.9rem;
     margin-top: 2rem;
   }
-`;
+`
 
 const SkillsDiv = styled.div`
   position: relative;
@@ -123,7 +123,7 @@ const SkillsDiv = styled.div`
       }
     }
   }
-`;
+`
 
 const techStacks = [
   'JavaScript',
@@ -132,7 +132,7 @@ const techStacks = [
   'MongoDB',
   'Docker',
   'Kubernetes',
-];
+]
 
 function About() {
   return (
@@ -188,7 +188,7 @@ function About() {
         </ul>
       </StyledSkills>
     </AboutSection>
-  );
+  )
 }
 
-export default About;
+export default About

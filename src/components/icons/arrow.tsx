@@ -1,4 +1,4 @@
-import Icon from './icon';
+import Icon from './icon'
 
 const IconArrow = (props: { fill?: string }) => (
   <Icon>
@@ -24,6 +24,6 @@ const IconArrow = (props: { fill?: string }) => (
       </g>
     </svg>
   </Icon>
-);
+)
 
-export default IconArrow;
+export default IconArrow

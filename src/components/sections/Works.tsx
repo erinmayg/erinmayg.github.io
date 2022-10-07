@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Featured from '../Featured';
-import Projects from '../Projects';
+import React from 'react'
+import styled from 'styled-components'
+import Featured from '../Featured'
+import Projects from '../Projects'
 
 const WorksSection = styled.section`
   flex-direction: column;
@@ -24,7 +24,7 @@ const WorksSection = styled.section`
       padding: 0 2rem;
     }
   }
-`;
+`
 
 function Works() {
   return (
@@ -34,7 +34,7 @@ function Works() {
       {/* <a style={{ marginBottom: '1rem' }}>View Archive</a> */}
       <Projects />
     </WorksSection>
-  );
+  )
 }
 
-export default Works;
+export default Works
