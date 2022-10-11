@@ -1,3 +1,9 @@
+export const NAVLINKS = [
+  { name: 'About', link: '/#about' },
+  { name: 'Experience', link: '/#experience' },
+  { name: 'Works', link: '/#works' },
+]
+
 export const LINKEDIN = 'https://linkedin.com/in/erinmayg'
 export const GITHUB = 'https://github.com/erinmayg'
 export const RESUME =

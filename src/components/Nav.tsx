@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RESUME } from '../constants'
+import { NAVLINKS, RESUME } from '../constants'
 import IconDoc from './icons/doc'
+import Menu from './Menu'
 
 const StyledNav = styled.nav`
   width: 100%;
@@ -32,26 +33,9 @@ const StyledNav = styled.nav`
   align-items: center;
   list-style: none;
   font-size: 1.2rem;
-
-  a {
-    padding: 1rem;
-
-    &:hover {
-      fill: var(--lightgrey);
-    }
-  }
-
-  svg {
-    position: absolute;
-    box-sizing: padding-box;
-    padidng: 1rem;
-    width: 24px;
-    height: 24px;
-    fill: inherit;
-  }
 `
 
-const Button = styled.a`
+const StyledLink = styled.a`
   position: relative;
   padding: 0.8rem 1rem;
   margin: 0 1rem;
@@ -75,6 +59,31 @@ const Button = styled.a`
   &:hover::after {
     transform: scale(1, 1);
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+const StyledLinkIcon = styled.a`
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--lightgrey);
+  }
+
+  svg {
+    position: absolute;
+    box-sizing: padding-box;
+    width: 24px;
+    height: 24px;
+    fill: inherit;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Logo = styled.a`
@@ -86,13 +95,17 @@ function Nav() {
     <StyledNav>
       <Logo href='/#'>EMG</Logo>
       <div>
-        <Button href='/#about'>About</Button>
-        <Button href='/#experience'>Experience</Button>
-        <Button href='/#works'>Works</Button>
-        <a href={RESUME} target='_blank' rel='noreferrer'>
+        {NAVLINKS &&
+          NAVLINKS.map((navLink, i) => (
+            <StyledLink href={navLink.link} rel='noreferrer'>
+              {navLink.name}
+            </StyledLink>
+          ))}
+        <StyledLinkIcon href={RESUME} target='_blank' rel='noreferrer'>
           <IconDoc />
-        </a>
+        </StyledLinkIcon>
       </div>
+      <Menu />
     </StyledNav>
   )
 }
