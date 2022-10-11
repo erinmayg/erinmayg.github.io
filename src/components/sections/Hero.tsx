@@ -28,6 +28,7 @@ const SocMed = styled.div`
   flex-direction: row;
   align-items: center;
   margin: 2rem 0;
+  width: max-content;
 
   svg {
     width: 80px;
@@ -77,12 +78,12 @@ function Hero() {
           I am a Computer Science student (with an interest in web development)
           who enjoys designing stuff for fun.
         </p>
-        <SocMed toggle={toggle}>
-          <button
-            onClick={() => setToggle(!toggle)}
-            onMouseOver={() => setShow(true)}
-            onMouseLeave={() => setShow(false)}
-          >
+        <SocMed
+          toggle={toggle}
+          onMouseOver={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+        >
+          <button onClick={() => setToggle(!toggle)}>
             <IconArrow />
           </button>
           {(toggle || show) && (
