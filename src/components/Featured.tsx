@@ -90,6 +90,8 @@ const StyledImage = styled.a`
     mix-blend-mode: luminosity;
     opacity: 0.2;
 
+    border-radius: inherit;
+
     width: 100%;
     height: 100%;
 
