@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.21fe8c6c.css",
-    "main.js": "/static/js/main.22c47bf9.js",
+    "main.js": "/static/js/main.106a307e.js",
     "static/js/787.5be9d458.chunk.js": "/static/js/787.5be9d458.chunk.js",
     "static/media/malik-skydsgaard-zjef0ySnFdo-unsplash.jpg": "/static/media/malik-skydsgaard-zjef0ySnFdo-unsplash.4685d82742775d24f7d4.jpg",
     "index.html": "/index.html",
     "main.21fe8c6c.css.map": "/static/css/main.21fe8c6c.css.map",
-    "main.22c47bf9.js.map": "/static/js/main.22c47bf9.js.map",
+    "main.106a307e.js.map": "/static/js/main.106a307e.js.map",
     "787.5be9d458.chunk.js.map": "/static/js/787.5be9d458.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21fe8c6c.css",
-    "static/js/main.22c47bf9.js"
+    "static/js/main.106a307e.js"
   ]
 }
