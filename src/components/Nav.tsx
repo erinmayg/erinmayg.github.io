@@ -74,8 +74,6 @@ const StyledLinkIcon = styled.a`
   }
 
   svg {
-    position: absolute;
-    box-sizing: padding-box;
     width: 24px;
     height: 24px;
     fill: inherit;
