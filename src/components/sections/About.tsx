@@ -141,12 +141,16 @@ function About() {
         <h1>About Me</h1>
         <StyledContent>
           <p>
-            I am a Y4 Computer Science student at{' '}
+            I graduated from{' '}
             <a href={NUS} target='_blank' rel='noreferrer'>
               NUS
-            </a>
-            . I am interested in learning new things and I love to create stuff.
-            I have years of experience working in Graphic Design and my hobby is
+            </a>{' '}
+            Computer Science in 2023, and I'm currently working in NCS.
+          </p>
+
+          <p>
+            I am interested in learning new things and I love to create stuff. I
+            have years of experience working in Graphic Design and my hobby is
             to create digital art.
           </p>
 

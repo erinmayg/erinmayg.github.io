@@ -8,12 +8,23 @@ export const LINKEDIN = 'https://linkedin.com/in/erinmayg'
 export const GITHUB = 'https://github.com/erinmayg'
 export const RESUME =
   'https://drive.google.com/file/d/1psJlKMhGC1Xq9rKdLCG3vRVikCZ4qhFR/view?usp=sharing'
-export const INSTAGRAM = 'https://instagram.com/slyth.erinnn'
+export const INSTAGRAM = 'https://instagram.com/poopsiesnoopy'
 export const EMAIL = 'erinmayg@gmail.com'
 
 export const NUS = 'https://www.nus.edu.sg/'
 
 export const JOBS = [
+  {
+    jobTitle: 'Software Engineer (Nucleus)',
+    date: 'Aug 2023 - Present, Singapore',
+    company: 'NCS',
+    companyLink: 'https://www.ncs.co',
+    desc: [
+      'Perform enhancements and maintenance for 4 systems under a government project.',
+      'Provide site reliability during peak periods.',
+      'Carried out cloud migration for a government project.',
+    ],
+  },
   {
     jobTitle: 'Co-Op / Intern',
     date: 'Jan 2022 - Jun 2022, Singapore',
@@ -71,6 +82,14 @@ export const FEATURED = [
 
 export const PROJECTS = [
   {
+    title: 'Homie',
+    desc: 'An app designed to make your co-living experience easier.',
+    techStack: ['Balsamic UI', 'Figma'],
+    links: {
+      site: 'https://uxfol.io/p/7e2f73c3/02477462/',
+    },
+  },
+  {
     title: 'PetSos!',
     desc: 'A mock-up website to connect pet caretakers with pet owners to facilitate care-taking services for each type and breed of pet.',
     techStack: ['Unity', 'C#', 'HTML5', 'CSS'],
@@ -86,15 +105,6 @@ export const PROJECTS = [
     links: {
       site: 'https://erinmayg.github.io/ip',
       github: 'https://github.com/erinmayg/ip',
-    },
-  },
-  {
-    title: 'Netflix Clone',
-    desc: 'A Netflix clone to preview all movies and TV-Shows available on Netflix.',
-    techStack: ['React', 'Node.js'],
-    links: {
-      site: 'https://erinmayg.github.io/netflix-clone',
-      github: 'https://github.com/erinmayg/netflix-clone',
     },
   },
 ]

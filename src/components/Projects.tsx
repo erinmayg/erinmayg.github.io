@@ -74,7 +74,7 @@ const ProjectCard = (props: {
     title: string
     desc: string
     techStack: string[]
-    links: { site?: string; github: string }
+    links: { site?: string; github?: string }
   }
 }) => {
   const { project: work } = props

@@ -75,8 +75,9 @@ function Hero() {
         <p>Hi, my name is</p>
         <h1>Erin May</h1>
         <p>
-          I am a Computer Science student (with an interest in web development)
-          who enjoys designing stuff for fun.
+          I am a software engineer with a passion for design.
+          <br />
+          (and I sometimes doodle).
         </p>
         <SocMed
           toggle={toggle}
