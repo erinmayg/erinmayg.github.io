@@ -86,16 +86,15 @@ export const PROJECTS = [
     desc: 'An app designed to make your co-living experience easier.',
     techStack: ['Balsamic UI', 'Figma'],
     links: {
-      site: 'https://uxfol.io/p/7e2f73c3/02477462/',
+      site: 'https://uxfol.io/7e2f73c3',
     },
   },
   {
-    title: 'PetSos!',
-    desc: 'A mock-up website to connect pet caretakers with pet owners to facilitate care-taking services for each type and breed of pet.',
-    techStack: ['Unity', 'C#', 'HTML5', 'CSS'],
+    title: 'PeerPrep',
+    desc: 'A web-app to create a collaborative space to practice coding interviews.',
+    techStack: ['React JS', 'Node.js', 'MongoDB'],
     links: {
-      site: 'https://cs2102-petsos.herokuapp.com/',
-      github: 'https://github.com/erinmayg/petsos',
+      github: 'https://github.com/erinmayg/peerprep',
     },
   },
   {
