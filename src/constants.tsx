@@ -92,7 +92,7 @@ export const PROJECTS = [
   {
     title: 'PeerPrep',
     desc: 'A web-app to create a collaborative space to practice coding interviews.',
-    techStack: ['React JS', 'Node.js', 'MongoDB'],
+    techStack: ['React', 'Node.js', 'MongoDB'],
     links: {
       github: 'https://github.com/erinmayg/peerprep',
     },

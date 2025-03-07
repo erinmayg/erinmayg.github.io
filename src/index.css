@@ -24,23 +24,27 @@
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--darkaccent) var(--bgColor);
+  background-color: black;
 }
 
 /* Scrollbar */
 body::-webkit-scrollbar {
   width: 6px;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--darkaccent);
   border: 2px solid var(--bgColor);
   border-radius: 10px;
 }
+
 body::-webkit-scrollbar-track {
   background: var(--bgColor);
 }
 
 /* Typography */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--fontHead);
 }
 

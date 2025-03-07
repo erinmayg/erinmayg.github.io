@@ -26,6 +26,7 @@ const StyledTechStack = styled.ul`
   li {
     margin: 1rem 0;
     margin-right: 2rem;
+    font-size: 0.9em;
 
     &:last-child {
       margin-right: 0;

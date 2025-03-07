@@ -96,7 +96,18 @@ const StyledEmail = styled.div`
   }
 
   @media (max-width: 768px) and (min-height: 700px) {
-    display: none;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+    a {
+      writing-mode: horizontal-tb;
+      margin: 0 4px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 `
 

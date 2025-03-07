@@ -19,11 +19,11 @@ const StyledMenu = styled.div`
   }
 `
 
-const StyledSidebar = styled.div`
+const StyledSidebar = styled.aside`
   display: none;
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
@@ -32,6 +32,8 @@ const StyledSidebar = styled.div`
     height: 100vh;
     overflow: hidden;
 
+    visibility: ${(props: { isOpen: boolean }) =>
+      props.isOpen ? 'visible' : 'hidden'};
     backdrop-filter: ${(props: { isOpen: boolean }) =>
       props.isOpen ? 'blur(10px)' : 'none'};
 

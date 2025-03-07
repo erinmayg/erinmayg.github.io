@@ -95,7 +95,7 @@ function Nav() {
       <div>
         {NAVLINKS &&
           NAVLINKS.map((navLink, i) => (
-            <StyledLink href={navLink.link} rel='noreferrer'>
+            <StyledLink href={navLink.link} rel='noreferrer' key={i}>
               {navLink.name}
             </StyledLink>
           ))}

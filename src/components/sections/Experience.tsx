@@ -101,6 +101,7 @@ const TabPanel = (props: { job: JobInterface }) => {
       <div>
         {desc.map((d, i) => (
           <div
+            key={i}
             style={{
               display: 'grid',
               gridTemplateColumns: '32px auto',
